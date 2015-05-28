@@ -5,8 +5,7 @@
 </head>
   <body>
   Hello there! 
-      <!-- <script type= 'text/template' data-template="AddAdventureTemplate"> -->
-         <form id="shitballs">
+         <form id="createForm">
 
             <label>Location
             <input type="text" name="location" />
@@ -26,21 +25,21 @@
           <button data-action="submit">Add New Adventure!</button>
 
          </form> 
-      <!-- </script> -->
+
 
     <div id='main'></div>
 
       <script type="text/template" data-template="AdventureViewTemplate">
-        <h1>{{location}}</h1>
-        <h2>{{activity}}  |  {{business}}</h2>
-        <p>{{comments}}</p>
+        <h1>Location: {{location}}</h1>
+        <h2>Activity: {{activity}}  |  Business: {{business}}</h2>
+        <p>Thoughts: {{comments}}</p>
         <br>
         <button data-action="delete">Delete</button>
         <button data-action="update">Update This Adventure!</button>        
       </script>
 
       <script type="text/template" data-template="UpdateTemplate">
-          <form id="shitballs">
+          <form id="update">
             <label>Location
             <input type="text" name="edit-location" />
             </label>
