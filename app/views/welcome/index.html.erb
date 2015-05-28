@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+  <body>
+  Hello there! 
+      <!-- <script type= 'text/template' data-template="AddAdventureTemplate"> -->
+         <form id="shitballs">
+
+            <label>Location
+            <input type="text" name="location" />
+            </label>
+
+            <label>Activity
+            <input type="text" name="activity" />
+            </label>
+
+            <label>Business
+            <input type="text" name="business" />
+            </label>
+
+            <label>Comments
+            <input type="text" name="comments" />
+            </label>
+          <button data-action="submit">Add New Adventure!</button>
+
+         </form> 
+      <!-- </script> -->
+
+    <div id='main'></div>
+
+      <script type="text/template" data-template="AdventureViewTemplate">
+        <h1>{{location}}</h1>
+        <h2>{{activity}}  |  {{business}}</h2>
+        <p>{{comments}}</p>
+        <br>
+        <button data-action="delete">Delete</button>
+        <button data-action="update">Update This Adventure!</button>        
+      </script>
+
+      <script type="text/template" data-template="UpdateTemplate">
+          <form id="shitballs">
+            <label>Location
+            <input type="text" name="edit-location" />
+            </label>
+
+            <label>Activity
+            <input type="text" name="edit-activity" />
+            </label>
+
+            <label>Business
+            <input type="text" name="edit-business" />
+            </label>
+
+            <label>Comments
+            <input type="text" name="edit-comments" />
+            </label>
+            <button data-action="save">Save Adventure!</button>
+          </form>
+      </script> 
+
+  </body>
+</html>
+
+
